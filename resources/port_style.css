@@ -1,0 +1,445 @@
+
+html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: scroll;
+   /* background-color: hsl(212, 29%, 19%);*/
+}
+
+@font-face {
+    font-family: 'quotefont';
+    src: url(font/Macondo-Regular.ttf) format('truetype');
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*-----------------------cabecera---------------------------*/
+header {
+    box-sizing: border-box;
+    display: flex;
+    background-image: linear-gradient(
+        to bottom,
+        hsl(212, 29%, 10%),
+        hsl(212, 29%, 20%)
+    );
+    width: 100%;
+    padding: 1.5rem;
+    border-top: 3px solid whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    align-content: center;
+    height: 10rem;
+}
+
+ header .img-container {
+    width: 6.5rem;
+    height: 6.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(163, 0, 25);
+    border-radius: 50%;
+    margin-right: 4rem;
+    margin-left: 8rem;
+}
+
+header .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-header {
+    height: 5rem;
+}
+
+.info-header h1 {
+    color: rgb(248, 180, 7);
+    margin-top: 0.6rem;
+    margin-bottom: 0.3rem;
+    font-size: 2.5rem;
+}
+
+.info-header h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+#correo-cabecera{
+    color: rgb(248, 180, 7);
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 0.4rem;
+}
+
+/*----header en movil----------*/
+@media only screen and (max-width: 480px) {
+    body{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+    }
+    header {
+        box-sizing: border-box;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: 7rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    header .img-container{
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .info-header {
+        height: 5rem;
+        margin-right: 0;
+    }
+
+    .info-header h1 {
+        margin: 0.25rem 0;
+        font-size: 1.25rem;
+    }
+    .info-header h3 {
+        margin: 0.25rem 0;
+        font-size: 1rem;
+    }
+    #correo-cabecera {
+        margin: 0.25rem 0;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+/*------------naevgador: solo movil!!!!--------------*/
+nav {
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    nav{
+    background-color: hsl(212, 29%, 15%);
+    display: block;
+    margin: 0 auto; 
+    position: sticky;
+    width: 100%;
+    top: 0rem;
+    z-index: 5;
+    }
+    nav ul {
+        display: flex;
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 1.5rem;
+        font-size: 0.8rem;
+    }
+    .enlace-interno {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .enlace-interno:active{
+        font-weight: bold;
+    }
+}
+
+
+/*---------------contenido principal-----------------*/
+main h2 {
+    color: rgb(189, 142, 25);
+    margin-bottom: 2rem;
+}
+.quote {
+    color: rgb(189, 142, 25);
+    font-family: 'quotefont';
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+@media only screen and (max-width: 480px) {
+    .quote {
+        font-size: 1.75rem;
+    }
+}
+/*--- en ordenador en grid, en movil en flex----------*/
+main {
+    width: 100%;
+    padding-top: 2rem;
+    /*height: 85rem;*/
+   /* background-color: hsl(212, 29%, 10%);*/
+   background-color: hsl(240, 8%, 12%);
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    padding: 0 1.5rem;
+    grid-template-columns: 1fr 3px 3fr;
+}
+
+@media only screen and (max-width: 480px) {
+    .info-personal{
+        margin-left: 0;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        
+    }
+    .raya {
+        max-height: 3px;
+        width: 80%;
+    }
+    .project-container {
+        box-sizing: border-box;
+        width: 85%;
+        padding-left: 1rem;
+    }
+}
+
+.info-personal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-container{
+    width: 12rem;
+    height: 16rem;
+    overflow: hidden;
+    
+}
+
+.foto-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.raya {
+    background-color: white;
+    height: 30rem;
+    margin: 2rem 0;
+}
+
+
+.project-container {
+    padding-left: 2rem;
+}
+
+#projects-title{
+    margin-bottom: 2rem;
+}
+
+details.project {
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+summary.project-title:hover {
+    color: rgb(189, 142, 25);
+}
+
+.project-description {
+    margin-top: 1rem;
+    cursor: auto;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-image {
+    width: 20rem;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.enlace-project{
+    color: rgb(189, 142, 25);
+    font-size: 1.1rem;
+}
+
+.enlace-project:hover{
+    font-size: 1.2em;
+}
+
+
+
+.tecno-container {
+    display: flex;
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+.tecno-container h4 {
+    margin: 0.2rem 0;
+}
+
+.tecnos {
+    background-color: whitesmoke;
+    color: hsl(212, 29%, 15%);
+    margin-left: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+}
+
+.tecnos > * {
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.tecnos > i {
+    display: flex;
+    align-items: center;
+}
+
+.tecno-description{
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.device-container {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.device-container h4 {
+    margin: 0.2rem 0;
+}
+
+.devices{
+    background-color: whitesmoke;
+    color: hsl(212, 29%, 15%);
+    margin-left: 1.5rem;
+}
+
+.devices > * {
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+
+/*--------------------raya divisoria-----------------------*/
+.raya2{
+    background-color: whitesmoke;
+    width: 80%;
+    height: 3px;
+    margin-left: 10%;
+    margin-top: 3rem;
+}
+
+/*----------------skilss------------------------*/
+.skills{
+    box-sizing: border-box;
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0 2rem 1rem;
+}
+
+.skills-container {
+    box-sizing: border-box;
+    padding: 0 0.5rem;
+    display: flex;
+    width: 90%;
+    background-color: whitesmoke;
+    color: hsl(212, 29%, 15%);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.skills-container > * {
+    width: 2rem;
+    font-size: 4rem;
+    margin: 0 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#interactive {
+    display: none;
+    position: relative;
+    width: 80%;
+    padding: 0.5rem;
+    margin-left: 5%;
+    margin-top: 1rem;
+    background-color: whitesmoke;
+    color: hsl(212, 29%, 15%);
+    border-radius: 5px;
+}
+
+#boton-X {
+    color: darkred;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#boton-X:hover {
+    cursor: pointer;
+}
+
+
+
+/*-------------------contacto--------------*/
+.contact{
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1rem 2rem;
+}
+.contacto-correo {
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    border: 2px solid whitesmoke;
+    border-radius: 7px;
+}
+
+/*-----------------------footer------------------------------*/
+footer {
+    background-image: linear-gradient(
+        to bottom,
+        hsl(212, 29%, 10%),
+        hsl(212, 29%, 20%)
+    );
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    border-top: 2px solid whitesmoke;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PST Portfolio</title>
+    <link rel="stylesheet" href="resources/port_style.css">
+    <link rel="shortcut icon" href="resources/favicon_p.png">
+    <script src="https://kit.fontawesome.com/5aab86539e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="img-container" id="logo">
+            <img src="resources/images/logo.jpg" alt="logo PST">
+        </div>
+        <div class="info-header">
+            <h1>Pedro María Sorriguieta Torre</h1>
+            <h3>Web Development - Electronic Engineer</h3>
+            <h4 id="correo-cabecera">pesorrig@gmail.com</h4>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about-me" class="enlace-interno">About me</a></li>
+            <li><a href="#projects" class="enlace-interno">Projects</a></li>
+            <li><a href="#skills" class="enlace-interno">Skills</a></li>
+            <li><a href="#contact" class="enlace-interno">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="quote">
+            "Fortis Fortuna Adiuvat"
+        </div>
+        <div class="grid">
+            <div class="info-personal" id="about-me">
+                <div class="foto-container">
+                    <img src="resources/images/foto-pedro1.JPG" alt="foto pedro">
+                </div>
+                <h3><i class="fa-solid fa-user"></i> Pedro Sorriguieta Torre</h3>
+                <p><i class="fa-solid fa-location-arrow"></i> Madrid, Spain</p>
+                <p><i class="fa-regular fa-calendar-days"></i> 19 / 08 / 1994</p>
+                <p><i class="fa-solid fa-book-open"></i> Ingeniería electrónica</p>
+            </div>
+            <div class="raya"></div>
+            <div class="project-container" id="projects">
+                <h2 id="projects-title">Proyectos</h2>
+                <details class="project">
+                    <summary class="project-title">
+                        Santa Cruz Events S.L.
+                    </summary>
+                    <div class="project-description">
+                        <div class="project-image">
+                            <img src="resources/images/santaCruz.png" alt="santa cruz events SL">
+                        </div>
+                        <p>Proyecto Codecademy, página de una empresa 
+                            <br> <br>
+                        Diseño adaptativo a pantalla de ordenador y móvil Android. Usada como banco de pruebas para nuevos
+                    conocimientos.  </p>
+                        
+                        <div class="tecno-container">
+                            <h4>Tecnologías: </h4>
+                            <div class="tecnos">
+                                <i class="fab fa-html5"><span class="tecno-description">HTML</span></i> 
+                                <i class="fab fa-css3-alt"><span class="tecno-description">CSS</span></i>
+                                <i class="fab fa-js"><span class="tecno-description">JavaScript</span></i>
+                            </div>
+                        </div>
+                        <div class="device-container">
+                            <h4>Dispositivos:</h4>
+                            <div class="devices">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <i class="fa-solid fa-laptop"></i>
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                        </div>
+                        <a href="https://pedromst94.github.io/santaCruz" class="enlace-project" target="_blank">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Enlace Santa Cruz Events S.L.
+                        </a>
+
+                        
+                    </div>
+                </details>
+                <details class="project">
+                    <summary class="project-title">Tea Shop</summary>
+                    <div class="project-description">
+                        <div class="project-image">
+                            <img src="resources/images/teaShop.png" alt="tea Shop">
+                        </div>
+                        <p>Práctica HTML + CSS, página empresa de venta de té y café. Proyecto Codecadamy</p>
+                        
+                        <!--<p><span class="tecnologias">HTML</span> - <span class="tecnologias">CSS</span></p>-->
+                        <div class="tecno-container">
+                            <h4>Tecnologías: </h4>
+                            <div class="tecnos">
+                                <i class="fab fa-html5"><span class="tecno-description">HTML</span></i>
+                                <i class="fab fa-css3-alt"><span class="tecno-description">CSS</span></i>
+                            </div>
+                        </div>
+                        <div class="device-container">
+                            <h4>Dispositivos:</h4>
+                            <div class="devices">
+                                <i class="fa-solid fa-laptop"></i>
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                        </div>
+                        <a href="https://pedromst94.github.io/projects_codeacademy/p4_teaShop/teaShop" 
+                        class="enlace-project" target="_blank">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            Enlace Tea Shop
+                        </a>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <div class="raya2"></div>
+        
+        <div class="skills" id="skills">
+            <h2>Skills</h2>
+            <p>Pulsa sobre el icono para saber más.</p>
+            <div class="skills-container">
+                <i class="fab fa-html5 boton-java" id="b-html" title="HTML"> </i>
+                <i class="fab fa-css3-alt boton-java" id="b-css" title="CSS"></i>
+                <i class="fab fa-js boton-java" id="b-js" title="JS"></i>
+                <i class="fab fa-git boton-java" id="b-git" title="Git"></i>
+                <i class="fab fa-github boton-java" id="b-github" title="GitHub"></i>
+                <i class="fas fa-terminal boton-java" id="b-terminal" title="Terminal"></i>
+            </div>
+            <div id="interactive">
+                <div id="boton-X"><i class="fa-solid fa-circle-xmark"></i></div>
+                <h3 id="titulo-render"></h3>
+                <p id="render"></p>
+            </div>
+        </div>
+
+        <div class="raya2"></div>
+
+        <div class="contact" id="contact">
+            <h2>Contacto</h2>
+            <div class="contacto-correo">
+                <p><i class="fa-regular fa-envelope"></i>    pesorrig@gmail.com</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Madrid, 2023
+    </footer>
+    <script src="resources/java.js"></script>
+</body>
+</html>
